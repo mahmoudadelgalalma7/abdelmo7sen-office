@@ -1,0 +1,108 @@
+/* Start Body */
+
+body{
+    height:100vh;
+    background: linear-gradient(45deg, #236483, #68bff4, #1379a9);
+    overflow: hidden;
+    font-family: 'Cairo', sans-serif;
+
+}
+nav,
+section{
+    margin:auto auto;
+    transform:translateY(50%);
+    -webkit-transform:translateY(50%);
+    -moz-transform:translateY(50%);
+    -ms-transform:translateY(50%);
+    -o-transform:translateY(50%);
+    -webkit-transform:translate();
+}
+/*  Start Nav */
+nav {
+    width:100%;
+    margin:3% 0%;
+    display:flex;
+    flex-direction: column;
+}
+nav .text {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#111;
+}
+
+nav .text h2{
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 1px solid #111;
+    padding: 15px 0px;
+
+}
+nav .text p {
+    font-size:1.3rem;
+    margin-top:0;
+    color:#111;
+}
+
+/* Start Section */
+
+section .container {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:25px;
+}
+section .container a {
+    text-decoration: none;
+    color:#111;    
+}
+@keyframes shadow {
+    from {
+        box-shadow: 5px 5px 15px #9f9a9a;
+    }
+    to {
+        box-shadow: -5px -5px 15px #CCC;
+    }
+    
+    
+}
+section .container .item {
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border:1px solid #CCC;
+        gap:20px;
+        border-radius:40px;
+        -webkit-border-radius:40px;
+        -moz-border-radius:40px;
+        -ms-border-radius:40px;
+        -o-border-radius:40px;
+        background: linear-gradient(45deg, #236483, #68bff4, #1379a9);
+        box-shadow: 5px 5px 15px #9f9a9a;
+        animation-name: shadow;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-direction: alternate;
+}
+section .container .item i {
+    padding:5px 20px;
+    color:#FFF;
+    font-size:3rem;
+
+}
+section .container .item span {
+    font-size:1.2rem;
+    padding:10px 25px;
+    color:#FFF;
+}
+
+section .container .item p {
+    font-size:1.2rem;
+    font-weight: bold;
+    padding:10px 15px;
+} 
